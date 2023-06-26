@@ -1,0 +1,23 @@
+extends parent_template.pug
+
+block style
+    style
+        include ../static/style.css
+    style
+        include ../static/style2.css
+
+block content
+        section
+            div#form
+                form(action="/contact" method="post")
+                    input(type="text" name="name" class="get-input" placeholder="Enter Your name")
+                    input(type="number" name="age" class="get-input" placeholder="Enter Your Age")
+                    input(type="text" name="gender" class="get-input" placeholder="Enter Your Gender")
+                    input(type="text" name="address" class="get-input" placeholder="Enter Your Address")
+                    input(type="text" name="more" class="get-input" placeholder="Enter About You")
+                    button#btn
+                        | Submit
+
+block foot
+    footer#footer
+        h1 Footer

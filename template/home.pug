@@ -1,0 +1,29 @@
+//- extends parent template i.e inherits parent properties & can be overridden
+//- if not then default will be the output
+
+extends parent_template.pug
+
+block style
+    style
+        include ../static/style.css
+    style
+        include ../static/style2.css
+
+block script
+    script
+        include ../static/script.js
+
+block content
+    section#main-section
+        | This is main section
+        | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, fugiat, rerum nisi excepturi ipsam ullam minima iure quos sequi veniam quo officiis amet magnam inventore corporis! Fuga pariatur dolorem nam?
+
+    section#mission
+        | This is a mission section
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, deleniti, error tenetur est obcaecati iure eligendi ducimus, temporibus dicta eveniet possimus doloremque neque aliquid! Nostrum provident deserunt distinctio sit odit.
+
+
+block foot
+    footer#footer
+        h1 Footer
+

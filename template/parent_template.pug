@@ -1,0 +1,23 @@
+//- This is a parent template
+//-  a block of pug holds the tags & may be replaced by child template
+//- to saves time
+//- e.g block name
+//-         type
+//-             content
+
+doctype html
+html
+    head
+        title Title
+        block style
+    body
+        nav#navbar.navigation.top
+            ul
+                li #[img(src="static/img/logo.png")] MDA
+                li #[a(href="/") Home]
+                li #[a(href="/") Join us]
+                li #[a(href="/contact") Contact]
+                li #[a(href="/") About]
+        block content
+        block foot
+        block script

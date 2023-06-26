@@ -1,0 +1,37 @@
+//- This is a comment in Pug
+
+//- Basic Structure of Pug
+doctype html
+html
+    head
+        //- tag name then plain text(content)
+        title  This is a title
+
+        //- adding normal styles & scripts
+        style
+            include ../static/style.css
+    body
+
+        //-  classes & ids
+        nav#navbar.navigation.top
+            ul
+                li #[img(src="static/img/logo.png")] MDA
+                li #[a(href="/") Home]
+                li #[a(href="/") Join us]
+                li #[a(href="/") Contact]
+                li #[a(href="/") About]
+
+        section#main-section
+            | This is main section
+
+        section#mission
+            //- use pipe for plain text or variables
+
+            | This is a mission section
+        footer#footer
+            h1 Heading
+            p This is a paragraph
+
+
+        script
+            include ../static/script.js

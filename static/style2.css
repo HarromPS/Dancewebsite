@@ -1,0 +1,35 @@
+#main-section,#mission{
+    height: 300px;
+    display: block;
+    width:40%;
+    margin: 12px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#form{
+    display: block;
+    width:40%;
+    margin: 12px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction:column;
+    padding:12px 12px;
+    align-items: center;
+}
+
+.get-input{
+    padding: 14px 14px;
+    margin: 10px 41px;
+    width: 80%;
+    border-radius: 15px;
+}
+
+#btn{
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+}
